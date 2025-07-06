@@ -38,7 +38,7 @@ A Model Context Protocol (MCP) server that integrates with GroundX RAG platform 
 
 3. **Set up environment variables**
    ```bash
-   cp .env.example .env
+   cp env.example .env
    ```
    
    Edit `.env` file and add your GroundX API key:
@@ -62,8 +62,9 @@ A Model Context Protocol (MCP) server that integrates with GroundX RAG platform 
 MCP/
 ├── server.py          # Main MCP server implementation
 ├── .env               # Environment variables (not in repo)
-├── .env.example       # Example environment file
+├── env.example        # Example environment file
 ├── .gitignore         # Git ignore rules
+├── requirements.txt   # Python dependencies
 └── README.md          # This file
 ```
 
@@ -106,7 +107,7 @@ result = search_doc_for_rag_context("MIG 29 aircraft dimensions")
 
 - API keys are stored in environment variables (not in code)
 - `.env` file is excluded from version control
-- Use `.env.example` as a template for configuration
+- Use `env.example` as a template for configuration
 
 ## 🤝 Contributing
 
@@ -131,4 +132,5 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 For issues and questions:
 - Create an issue in this repository
 - Check the [GroundX documentation](https://docs.groundx.ai/)
-- Review [MCP documentation](https://modelcontextprotocol.io/) 
+- Review [MCP documentation](https://modelcontextprotocol.io/)
+
